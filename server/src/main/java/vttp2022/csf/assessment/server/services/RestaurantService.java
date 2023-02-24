@@ -21,6 +21,9 @@ public class RestaurantService {
 	@Autowired
 	private MapCache mapCache;
 
+	@Autowired
+	private S3Service s3Svc;
+
 	// TODO Task 2 
 	// Use the following method to get a list of cuisines 
 	// You can add any parameters (if any) and the return type 
@@ -45,6 +48,9 @@ public class RestaurantService {
 	// DO NOT CHNAGE THE METHOD'S NAME OR THE RETURN TYPE
 	public Optional<Restaurant> getRestaurant(LatLng coord) {
 		// Implmementation in here
+
+		// s3Svc.uploadFile( restaurantRepo.getRestaurant(coord).get().toString());
+
 		return restaurantRepo.getRestaurant(coord);
 	}
 
