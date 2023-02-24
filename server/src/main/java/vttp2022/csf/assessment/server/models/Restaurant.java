@@ -66,7 +66,7 @@ public class Restaurant {
 			.add("name", this.name)
 			.add("cuisine", this.cuisine)
 			.add("address", this.address)
-			// .add("coordinates", this.coordinates.toJson())
+			.add("coordinates", this.coordinates.toJson())
 			.add("mapUrl", this.mapUrl);
 			return job.build();
 
