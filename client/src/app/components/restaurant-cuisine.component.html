@@ -1,1 +1,14 @@
-<p>restaurant-cuisine works!</p>
+<h1>List of Asian Restaurants</h1>
+
+<div>
+    <div *ngFor="let restaurant of restaurants">
+        <!-- <a [routerLink]="['/api', restaurant.id]"> -->
+            {{restaurant}}
+
+            {{ restaurant.name }}
+        <!-- </a> -->
+    </div>
+    <button type="button" (click)="backToHome()">Back</button>
+
+</div>
+<!-- <app-restaurant-cuisine [cuisine]="cuisine" *ngFor="let cuisine of cuisines"></app-restaurant-cuisine> -->

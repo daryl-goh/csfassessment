@@ -1,1 +1,38 @@
-<p>restaurant-details works!</p>
+<form [formGroup] = "form" (ngSubmit)="submitForm()">
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td>Ajisen Ramen</td>
+        </tr>
+        <tr>
+            <td>Cuisine:</td>
+            <td>Asian</td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td>14, Mott Street ,10013, Manhattan</td>
+        </tr>
+        <tr>
+            <td>Coordinates</td>
+            <td>MAP HERE</td>
+        </tr>
+        <tr>
+        </table>
+        <table>
+            <td><h2>Comment</h2></td>
+        <tr>
+            
+            <td>Name: <input type="text" formControlName="name"></td>
+        </tr>
+        <tr>
+            <td>Rating:<input type="number" formControlName="rating"></td>
+        </tr>
+        <tr>
+            <td><textarea formControlName="text" rows="10" cols="50" placeholder="Type here"></textarea></td>
+        </tr>
+        <tr>
+            <button type="button" (click)="backToViewTwo()">Back</button>
+            <button type="submit" [disabled]="!formValid()">Submit</button>
+        </tr>
+    </table>
+</form>
