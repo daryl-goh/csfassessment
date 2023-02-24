@@ -73,24 +73,6 @@ public class RestaurantController {
         System.out.println(">>>>>RESP:" + resp);
 
         return ResponseEntity.ok(resp.toString());
-
-
-        
-      
-            // restaurantList.stream()
-            // .forEach(v -> {
-            //     arrBuilder.add(v.toJson());
-            // });
-
-
-        // JsonArrayBuilder arrBuilder = Json.createArrayBuilder();
-      
-        //     restaurantList.stream()
-        //     .forEach(v -> {
-        //         arrBuilder.add(v);
-        //     });
-
-        // return ResponseEntity.ok(arrBuilder.build().toString());
      
     }
 
