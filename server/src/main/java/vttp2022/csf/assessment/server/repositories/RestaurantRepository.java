@@ -93,16 +93,7 @@ public class RestaurantRepository {
 		return mongoTemplate.find(query, Restaurant.class, RESTAURANT_COLLECTION).stream().findFirst();
 
 	
-		
-		// Restaurant restaurant = mongoTemplate.findOne(Query.query(Criteria
-		// 	.where("name")
-		// 	.is(restaurantName)), Restaurant.class, RESTAURANT_COLLECTION);
-		
-		// if (restaurant != null) {
-		// 	return Optional.of(restaurant);
-		// }
-		// return Optional.ofNullable(restaurant);
-
+	
 		
 	}
 
